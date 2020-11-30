@@ -1,0 +1,37 @@
+@media screen and (max-width: 925px) {
+
+.schools{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.schools-img img{
+  grid-area: area1;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+}
+
+@media screen and (max-width: 648px) {
+  .projects-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    .projects-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .uptc, .platzi {
+      width: 100%;
+    }
+  }

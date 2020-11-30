@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ##################################### */
+/* ########### VARIABLES ###############*/
+/* ##################################### */
+
+:root{
+  /* Tamaño fuente */
+  --normal: 18px;
+  --large: 40px;
+  --medium: 30px;
+  --small: 16px;
+  --mini: 14px;
+
+  /* colores */
+
+  --greenBlueDark: #006d77;
+  --blueSky: #83c5be;
+  --white: #edf6f9;
+  --rosa: #ffddd2;
+  --magenta: #e29578;
+
+/* font-family: 'Pacifico', cursive;
+  &#10084 corazon */
+
+}
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section header */
+/* ###################################### */
+/* ###################################### */
+
+.header{
+  width: 100%;
+  background-image: linear-gradient(rgba(237, 246, 249, 0.808),rgba(131,	197,	190, 0.1)), url('../assets/business-2846221_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 480px;
+}
+
+h1{
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Pacifico', sans-serif;
+  color: var(--greenBlueDark);
+  letter-spacing: 5px;
+  padding-top: 80px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 50px;
+  color: var(--greenBlueDark);
+  font-weight: bold;
+  font-family: 'Arimo', sans-serif;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color: var(--magenta);
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav-container{
+  border-bottom: 1px var(--magenta-color) solid;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.img-container img{
+  width: 50px;
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section hero */
+/* ###################################### */
+/* ###################################### */
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section Proyectos */
+/* ###################################### */
+/* ###################################### */
+
+.projects{
+  background-image: linear-gradient(var(--rosa), var(--blueSky));
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+h2{
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Pacifico', sans-serif;
+  color: var(--greenBlueDark);
+  letter-spacing: 5px;
+  padding-top: 40px;
+  
+}
+
+.projects-container{
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 80%;
+  margin: 50px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+
+.projects-detail{
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.projects-detail img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover; 
+}
+
+.overlay-left{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0; 
+  background-color: var(--greenBlueDark);
+  opacity: .80;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+.overlay-right{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background-color: var(--greenBlueDark);
+  opacity: .80;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+.item-1:hover .overlay-left {
+  width: 100%;
+  left: 0;
+}
+
+.item-2:hover .overlay-right {
+  width: 100%;
+}
+
+.item-3:hover .overlay-right {
+  width: 100%;
+}
+
+.overlay-details {
+  color: var(--white);
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family: 'Arimo', sans-serif;
+}
+
+.button{
+  margin-top: 40px;
+}
+
+.button a{
+  font-family: 'Pacifico', sans-serif;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  border: 2px var(--magenta) solid;
+  padding: 5px 20px;
+  letter-spacing: 3px;
+  border-radius: 20px;
+}
+
+.button a:hover{
+  background-color: var(--rosa);
+  color: var(--greenBlueDark);
+  border: transparent;
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section Proyectos#### */
+/* ###################################### */
+/* ###################################### */
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section Educación#### */
+/* ###################################### */
+/* ###################################### */
+
+.education {
+  background-image: linear-gradient(#83c5be, #edf6f9);
+}
+
+.schools {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.schools-img img{
+  max-width: 200%;
+}
+
+
+.uptc, .platzi {
+  border-radius: 10px;
+  box-shadow: 7px 7px 4px -1px  #a3a1a1;
+  display: grid;
+  grid-template-columns: repeat(2, 20% 80%);
+  border: 2px solid var(--greenBlueDark);
+  background-color: var(--white);
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+
+.schools h3{
+  font-size: 20px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  color: var(--magenta);
+  margin-bottom: 20px;
+}
+
+.schools p {
+  font-family: 'Arimo', sans-serif;
+  color: #1d2328;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.polygon {
+  background: var(--blueSky);
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+  clip-path: polygon(0 0, 0 100%, 85% 50%);
+  align-self: center;
+  margin-bottom: 40px;
+  margin-left: 30px;
+
+}
+
+.desc-container {
+  box-sizing: border-box;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section Educación#### */
+/* ###################################### */
+/* ###################################### */
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section skills#### */
+/* ###################################### */
+/* ###################################### */
+.skills {
+  max-width: 90%;
+  margin: 40px auto 0 auto;
+  padding: 40px 0;
+}
+
+.skills-row1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-row2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills .skills-row1 img:hover{
+  border-radius: 10px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills .skills-row2 img:hover{
+  border-radius: 10px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section skills#### */
+/* ###################################### */
+/* ###################################### */
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section footer#### */
+/* ###################################### */
+/* ###################################### */
+
+.footer{
+  height: 230px;
+  background-color: rgba(237, 246, 249, 0.808);
+}
+
+.footer-detail{
+  padding-top: 120px;
+}
+
+.footer-detail p{
+  text-align: center;
+  color: var(--greenBlueDark);
+  font-family: 'Arimo', sans-serif;
+  font-weight: bolder;
+}
+
+.footer-detail p span{
+  color: red;
+}
+
+.footer-detail-social{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.footer-detail-social i{
+  font-size: 25px;
+  color: var(--magenta);
+  margin: 0 10px;
+}
+
+.footer-detail-social i:hover{
+  color: var(--greenBlueDark);
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section footer#### */
+/* ###################################### */
+/* ###################################### */
+
