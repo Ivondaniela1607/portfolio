@@ -37,7 +37,7 @@
 
 .header{
   width: 100%;
-  background-image: linear-gradient(rgba(237, 246, 249, 0.808),rgba(131,	197,	190, 0.1)), url('../assets/business-2846221_1920.jpg');
+  /* background-image: linear-gradient(rgba(237, 246, 249, 0.808),rgba(131,	197,	190, 0.1)), url('../assets/business-2846221_1920.jpg'); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
