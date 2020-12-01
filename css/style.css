@@ -41,7 +41,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 480px;
+  height: 100vh;
 }
 
 h1{
