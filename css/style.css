@@ -43,7 +43,14 @@ body{
 
 .header{
   width: 100%;
-  /* background-image: linear-gradient(rgba(237, 246, 249, 0.808),rgba(131,	197,	190, 0.1)), url('../assets/business-2846221_1920.jpg'); */
+
+ 
+
+  clip-path: ellipse(60% 70% at 50% 30%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.473)), url('../assets/business-2846221_1920.jpg');
+
+/*  clip-path: ellipse(73% 26% at 48% 33%);
+   */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
