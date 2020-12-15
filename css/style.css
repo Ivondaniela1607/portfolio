@@ -160,7 +160,6 @@ li a:hover {
 .nav-container-items{
   position: fixed;
   z-index: 3;
-  border: 1px red solid;
   width: 100vw;
   height: 100vh;
   right: -100vw;
