@@ -17,8 +17,16 @@
 </head>
 <body>
   <div class="content-burger-button">
-    <i class="fas fa-bars burger-button"></i>
+    <i class="fas fa-bars burger-button" id="burger-menu"></i>
 
+  </div>
+  <div class="nav-container-items">
+    <ul class="menu">
+      <li><a class="link" href="">Inicio</a></li>
+      <li><a class="link" href="#projects">Proyectos</a></li>
+      <li><a class="link" href="#educacion">Educación</a></li>
+      <li><a class="link" href="#contacto">Contacto</a></li>
+    </ul>
   </div>
   <header class="header">
     <section class="nav-container">
@@ -26,14 +34,7 @@
         <div class="img-container">
           <img src="assets/myLogo.png" alt="">
         </div>  
-        <div class="nav-container-items">
-          <ul>
-            <li><a class="link" href="">Inicio</a></li>
-            <li><a class="link" href="#projects">Proyectos</a></li>
-            <li><a class="link" href="#educacion">Educación</a></li>
-            <li><a class="link" href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
+       
       </nav>
     </section>
     <section class="header-details">
@@ -176,5 +177,23 @@
     </div>
   </footer>
 
+  <script>
+    const menu = document.querySelector('.nav-container-items');
+    console.log(menu);
+    const burgerButton = document.querySelector('#burger-menu');
+    console.log(burgerButton);
+
+    burgerButton.addEventListener('click', hideShow);
+
+    function hideShow(){
+      if (menu.classList.contains('is-active')){
+        menu.classList.remove('is-active')
+      }else{
+        menu.classList.add('is-active')
+
+      }
+
+    }
+  </script>
 </body>
 </html>
