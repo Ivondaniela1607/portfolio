@@ -18,6 +18,20 @@
 
 }
 
+@media screen and (max-width: 730px) {
+  .content-burger-button{
+    display: block;
+  }
+
+  .nav-container-items{
+    display: none;
+  }
+
+  h1{
+    font-size: 60px;
+  }
+}
+
 @media screen and (max-width: 648px) {
   .projects-container{
     display: grid;

@@ -132,6 +132,28 @@ li a:hover {
   width: 80px;
 }
 
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 109, 119, .8);
+  /* display: flex; */
+  text-align: center;
+  padding-top: 13px;
+  position: fixed;
+  z-index: 4;
+  right: 40px;
+  top: 30px;
+  color: var(--white);
+  
+}
+
+.content-burger-button{
+  display: none;
+  justify-content: flex-end;
+ 
+}
+
 /* ###################################### */
 /* ###################################### */
 /* #### Acá termina -->Section hero */
@@ -341,6 +363,17 @@ h2{
   box-sizing: border-box;
   margin: 15px;
   padding: 15px;
+}
+
+.desc-container a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #1d2328;
+  font-weight: 700;
+}
+
+.desc-container a:hover{
+  color: var(--greenBlueDark);
 }
 
 /* ###################################### */
