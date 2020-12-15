@@ -122,12 +122,6 @@ li a:hover {
   margin: 0 auto;
 }
 
-/* .nav-container{
-  border-bottom: 1px var(--magenta-color) solid;
-  max-width: 100%;
-  margin: 0 auto;
-} */
-
 .img-container img{
   width: 80px;
 }
@@ -157,10 +151,6 @@ li a:hover {
 .menu{
   display: flex;
   flex-direction: column;
-
-  
-
- 
 }
 
 .nav-container-items{
@@ -211,8 +201,6 @@ li a:hover {
   background-image: linear-gradient(var(--rosa), var(--blueSky));
   overflow: hidden;
   margin: 0 auto;
-
-
 }
 
 h2{
@@ -224,7 +212,6 @@ h2{
   color: var(--greenBlueDark);
   letter-spacing: 5px;
   padding-top: 40px;
-  
 }
 
 .projects-container{
@@ -356,7 +343,6 @@ h2{
   max-width: 200%;
 }
 
-
 .uptc, .platzi {
   border-radius: 10px;
   box-shadow: 7px 7px 4px -1px  #a3a1a1;
@@ -368,7 +354,6 @@ h2{
   margin-bottom: 20px;
 }
 
-
 .schools h3{
   font-size: 20px;
   font-family: 'Arimo', sans-serif;
@@ -377,14 +362,14 @@ h2{
   margin-bottom: 20px;
 }
 
-.schools p {
+.schools p{
   font-family: 'Arimo', sans-serif;
   color: #1d2328;
   line-height: 20px;
   font-size: 18px;
 }
 
-.polygon {
+.polygon{
   background: var(--blueSky);
   border: 1px solid white;
   box-sizing: border-box;
@@ -395,7 +380,6 @@ h2{
   align-self: center;
   margin-bottom: 40px;
   margin-left: 30px;
-
 }
 
 .desc-container {
